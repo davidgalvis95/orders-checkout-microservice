@@ -139,6 +139,9 @@ Before starting, please take a look to the "DockerFile" and the "application.pro
 
 The host of the URIs must be configured so that if match the {container-name} in the step 2.3.
 
+Additionally, please run a maven clean install for each of the projects, so that the jar that is set in the "DockerFile" can be created or updated. Please make sure that the jar is present in the "Target" folder.
+
+
 2.1 Create a network, so that all the service can be run inside them, is recommended to create its diver as Bridge.
 
 docker network create {network-name}
