@@ -5,7 +5,7 @@ Considerations:
 
 - The service has not a DAO connection due that the same was thought as a mock service and the deadline was not that long to go deep into the database connections configuration. All the repositories were built using the JVM memory.
 - The service is composed of three spring-boot applications(checkout-service,logistic-service,billing-service) that are maven based.
-- The Id of the order is assigned automatically by the service, from 100000 onwards.
+- The order id is assigned automatically by the service, from 100000 onwards.
 
 
 DOCUMENTATION
