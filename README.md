@@ -160,7 +160,7 @@ docker build -f DockerFile -t billingservice .
 
 2.3 Run the image in a container, executing the following command:
 
-docker container run --network {network-name} --name {container-name} -p 8091:8091 {image-name}
+docker container run --network {network-name} --name {container-name} -p {port}:{port} {image-name}
 e.g.
 docker run --network checkout-billing-logistic --name billing -p 8091:8091 billingservice
 docker run --network checkout-billing-logistic --name logistic -p 8092:8092 logisticservice
