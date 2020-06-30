@@ -132,14 +132,14 @@ To view examples of the happy path of the requests that have been explained you 
 
 2.Docker configuration
 
-Before starting, please take a look to the "DockerFile" and the "application.properties", as well as the following URI variables:
+Before starting, please take a look at the following: 
 
-- "uriSumTotalsPerProduct" and "uriSumTotals", both of them in the "billingCalculationFormatted" method of the CheckoutService.java class.
-- uriToGetShippingOrder, inside the "logisticFixesToBill" method of the CheckoutService.java class.
-
-The host of the URIs must be configured so that if match the {container-name} in the step 2.3.
-
-Additionally, please run a maven clean install for each of the projects, so that the jar that is set in the "DockerFile" can be created or updated. Please make sure that the jar is present in the "Target" folder.
+- The "DockerFile" and the "application.properties" file of each project.
+- the following URI variables:
+  - "uriSumTotalsPerProduct" and "uriSumTotals", both of them in the "billingCalculationFormatted" method of the CheckoutService.java class.
+  - uriToGetShippingOrder, inside the "logisticFixesToBill" method of the CheckoutService.java class.
+- The host of the URIs must be configured so that if match the {container-name} in the step 2.3.
+- Additionally, please run a maven clean install for each of the projects, so that the jar that is set in the "DockerFile" can be created or updated. Please make sure that the jar is present in the "Target" folder.
 
 
 2.1 Create a network, so that all the service can be run inside them, is recommended to create its diver as Bridge.
