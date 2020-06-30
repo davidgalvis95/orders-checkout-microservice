@@ -153,6 +153,8 @@ docker network create checkout-billing-logistic
 "./Purchase-orders-checkout-service/checkout-service>", and do not forget the dot at the end of the command, it is a common error :(.
 
 docker build -f {docker-file-name} -t {image-name} .
+
+
 e.g.
 docker build -f DockerFile -t billingservice .
 
