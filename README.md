@@ -3,6 +3,7 @@ THE CHECKOUT MICROSERVICE
 
 Considerations:
 
+- The checkout service was developed in Java using spring boot framework and deployed in docker, spring boot was chosen because it is pretty flexible and has a wide community support. Docker was chosen because it is one of the best platforms to deploy almost any application, besides it has a good compatibility with spring.
 - The service has not a DAO connection due that the same was thought as a mock service and the deadline was not that long to go deep into the database connections configuration. All the repositories were built using the JVM memory.
 - The service is composed of three spring-boot applications(checkout-service,logistic-service,billing-service) that are maven based.
 - The order id is assigned automatically by the service, from 100000 onwards.
