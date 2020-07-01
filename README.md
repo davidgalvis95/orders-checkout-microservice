@@ -5,7 +5,7 @@ Considerations:
 
 - The checkout service was developed in Java using spring boot framework and deployed in docker, spring boot was chosen because it is pretty flexible and has a wide community support. Docker was chosen because it is one of the best platforms to deploy almost any application, besides it has a good compatibility with spring.
 - The service has not a DAO connection due that the same was thought as a mock service and the deadline was not that long to go deep into the database connections configuration. All the repositories were built using the JVM memory.
-- Similarly, there are some validations that could be added through the @Valid annotation in the input side of the requests, however, as this is a mock service, and the time was running, the developing of the service was approached to the logic an the processing of the data, however, this code is made so that those validations will be implemented.
+- Similarly, there are some validations that could be added through the @Valid annotation in the input side of the requests linking them with the entities, however, as this is a mock service, and the time was running, the developing of the service was approached to the logic an the processing of the data, however, this code is made so that those validations will be implemented.
 - The service is composed of three spring-boot applications(checkout-service,logistic-service,billing-service) that are maven based.
 - The order id is assigned automatically by the service, from 100000 onwards.
 
